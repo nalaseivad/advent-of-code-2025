@@ -1,3 +1,7 @@
+# Mac OS / Windows system files
+.DS_Store
+Thumbs.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
