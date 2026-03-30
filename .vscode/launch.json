@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:part}",
+                "${input:inputFile}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "part",
+            "type": "pickString",
+            "description": "Which part?",
+            "options": ["1", "2"],
+            "default": "1"
+        },
+        {
+            "id": "inputFile",
+            "type": "promptString",
+            "description": "Input file",
+            "default": "test-input.txt"
+        }
+    ]
+}
